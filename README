@@ -1,0 +1,28 @@
+
+
+ Neural net with one hidden Layer -- DependencyParser.py contains :
+ ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+ --Loss Function DependencyParserModel.build_graph which has the call to optimiser with non clipped gradients. This is commented.
+
+ --Forward pass with cubic Activation function : Contains all other activation functions which are commented but were run and their results were recorded in the report.
+
+ --For fixed embeddings, piece of code is commented which does not allow the embeddings to be trained
+
+  Neural net with two hidden Layers DependencyParser_2hiddenlayers.py contains:
+ ---------------------------------------------------------------------------------------------------------------------------------------------------
+
+  --Loss Function DependencyParserModel.build_graph which calls forward_pass 2 times for finding predictions to compute loss.
+  --Contains Feature Generation :getFeatures(...)
+
+  Neural net with three hidden Layers DependencyParser_3hiddenlayers.py contains :    ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+  --Loss Function DependencyParserModel.build_graph also has the call to optimiser with non clipped gradients. This is commented. It calls forward_pass 3 times for finding predictions to compute loss. --Contains all other activation functions which are commented but were run and their results were recorded in the report
+
+Neural Net with three parallel hidden layers for POS, Labels and Tags DependencyParser_parallel.py contains:
+----------------------------------------------------------------------------------------------------------------------------------------------------
+--Loss Function DependencyParserModel.build_graph calls forward_pass one time and adds the result of activation function of each one of word embeddings, POS tags and labels. It then multiplies this addition by output weights. It then computes loss.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Config.py contains configuration of hyper parameters for best model.
